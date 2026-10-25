@@ -1,0 +1,23 @@
+{
+  "name": "site-tracking-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Аудит трекинга сайта снаружи: счётчики, пиксели, коллтрекинг, отправка хитов, точки конверсии",
+  "author": "Вадим Антонович (https://vadim.tabletools.ru)",
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "scan": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}
